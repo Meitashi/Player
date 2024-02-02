@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="player">
+        <div class="wrapper">
+            <div class="info">
+                <div class="now-playing">PLAYING x OF y</div>
+                <div class="img"></div>
+                <div class="music-name"></div>
+                <div class="artist"></div>
+            </div>
+            <div class="slider_container">
+                <div class="current-time">00:00</div>
+                <input type="range" min="0" max="100" value="0" class="music-line" onchange="seekTo()">
+                <div class="total-duraction">00:00</div>
+            </div>
+            <div class="slider_container">
+                <i class="volume-down"></i>
+                <input type="range" min="1" max="100" value="0" class="volum-slider" onchange="setVolume()">
+                <i class="volume-up"></i>
+            </div>
+            <div class="buttons">
+                <div class="prevButton"><button type="button" onclick="prevTrack()"><img src="img/prev.png" alt=""></button></div>
+                <div class="pauseButton"><button type="button" onclick="playpauseTrack()"><img src="img/pause.png" alt=""></button></div>
+                <div class="nextButton"><button type="button" onclick="nextTrack()"><img src="img/next.png" alt=""></button></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

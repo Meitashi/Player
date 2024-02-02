@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    background-image: url(/Плеер/img/background.jpg);
+}
+.player{
+    width: 250px;
+    height: 400px;
+    background-color: rgb(158, 234, 234);
+    margin: 0 auto;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.wrapper{
+    width: 240px;
+    height: 390px;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.img{
+    height: 180px;
+    width: 180px;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+.now-playing{
+    font-size: 1em;
+}
+.music-name{
+    font-size: 22px;
+    font-family: fantasy;
+}
+.artist{
+    margin-top: 3px;
+    font-size: 15px;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 25px 0px 0px 0px;
+    justify-content: space-around;
+    opacity: 0.7;
+    border: none;
+}
+.prevButton,.pauseButton,.nextButton{
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+}
+.prevButton:hover,.pauseButton:hover,.nextButton:hover{
+    opacity: 1;
+}
+.slider_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.current-time, .total-duraction{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 15px;
+    background: #ffffff95;
+}
+
+.slider_container input[input="range"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 10px;
+}
+input[type="range"]::-webkit-slider-runnable-track{
+    height: 10px;
+    border: none;
+    background-color: rgb(199, 198, 198);
+    border-radius: 30px;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: yellowgreen;
+    border: none;
+    border-radius: 50%;
+    margin-top: -3px;
+}
